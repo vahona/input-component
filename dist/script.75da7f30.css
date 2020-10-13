@@ -1,10 +1,103 @@
 form {
-    margin: 1rem;
+    margin: 2rem;
 }
 
 input {
-    padding: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
 }
+
+.specific {
+    outline: none;
+}
+
+.specific:hover {
+    border: rgb(218, 32, 212) 1px solid;
+}
+
+.specific:focus {
+    border: rgb(248, 235, 53) 1px solid;
+}
+
+.interesting {
+    display: flex;
+}
+
+.icones {
+    display: flex;
+}
+.inputsize {
+    display: flex;
+}
+
+
+.inpt-disabled {
+    background-color: rgba(114, 112, 114, 0.275);
+    cursor: not-allowed;
+}
+
+
+.inpt-error {
+    border: tomato 2px solid;
+    outline: none;
+
+}
+
+.inpt-error > label {
+  color: red;
+}
+
+/* .inpt-helperText {
+    border: tomato 2px solid;
+} */
+p {
+    color: red;
+}
+
+.inpt-error:hover {
+    border: black 2px solid;
+}
+
+.inpt-error:focus {
+    border: springgreen 2px solid;
+}
+
+.inpt-sm {
+    padding: 0.75rem  2rem;
+}
+
+.inpt-md {
+    padding: 1rem 3rem;
+}
+
+.inpt-text {
+   border: yellowgreen 2px solid;
+}
+
+.inpt-fullwidth {
+    padding-right: 100%;
+    border: black 1px solid;
+}
+
+.inpt-fullwidth:hover,
+.inpt-fullwidth:focus,
+.inpt-multiline:focus,
+.inpt-multiline:hover,
+.inpt-helperText:focus,
+.inpt-startIcon:focus,
+.inpt-startIcon:hover {
+    border: black 1px solid;
+}
+
+
+.inpt-multiline {
+    padding-bottom: 4rem;
+    
+}
+
+
+
+
 
 
 
