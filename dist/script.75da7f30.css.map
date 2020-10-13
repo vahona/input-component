@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"script.75da7f30.css","sourceRoot":"..","sourcesContent":["form {\r\n    margin: 1rem;\r\n}\r\n\r\ninput {\r\n    padding: 1.5rem;\r\n}\r\n\r\n"]}
