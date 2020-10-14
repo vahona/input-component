@@ -11,31 +11,40 @@ function App() {
         <section>
             <h1>Input Component</h1>
         <form>
-            {`<Input />`} <br />
+            <div className='type'>
+            {`<Input />`} 
+            </div>
             <label>Label</label><br />
                 <Input placeholder="placeholde"
             />
-            {/* <Icons /> */}
         </form>
         <form>
-            {`<Input error />`} <br />
+            <div className='type'>
+            {`<Input error />`} 
+            </div>
             <label>Label</label><br />
             <Input error placeholder="placeholder" />
         </form>
         <form>
-            {`<Input disabled />`} <br />
+            <div className='type'>
+            {`<Input disabled />`}
+            </div>
             <label>Label</label><br />
             <Input placeholder="placeholder" disabled />
         </form>
         <section className="interesting">
         <form>
-            {` <Input helperText="Some interesting text"/>`} <br />
+            <div className='type'>
+            {` <Input helperText="Some interesting text"/>`}
+            </div>
             <label>Label</label><br />
             <Input helperText="Some interesting text" placeholder="placeholder"/>
             <div>Some interesting text</div>
         </form>
         <form>
-            {`<Input helperText="Some interesting text" error/>`} <br />
+            <div className='type'>
+            {`<Input helperText="Some interesting text" error/>`} 
+            </div>
             <label className="errorlabel">Label</label><br />
             <Input helperText="Some interesting text" placeholder="placeholder" error/>
             <p>Some interesting text</p>
@@ -43,40 +52,54 @@ function App() {
         </section>
         <section className="icones">
         <form>
-            {`<Input  startIcon />`} <br />
+            <div className='type'>
+            {`<Input  startIcon />`}
+            </div>
             <label>Label</label><br />
             <Input startIcon placeholder="placeholder"/>
         </form>
         <form>
-            {`<Input endIcon />`} <br />
+            <div className='type'>
+            {`<Input endIcon />`} 
+            </div>
             <label>Label</label><br />
             <Input endIcon placeholder="placeholder"/>
         </form>
         </section>
         <form>
-            {`<Input value="text" />`} <br />
+            <div className='type'>
+            {`<Input value="text" />`} 
+            </div>
             <label>Label</label><br />
             <Input placeholder="text"/>
         </form>
         <section className="inputsize">
         <form>
-            {`<Input size="sm" />`} <br />
+            <div className='type'>
+            {`<Input size="sm" />`} 
+            </div>
             <label>Label</label><br />
             <Input size="sm" placeholder="placeholder" />
         </form>
         <form>
-            {`<Input size="md" />`} <br />
+            <div className='type'>
+            {`<Input size="md" />`} 
+            </div>
             <label>Label</label><br />
             <Input size="md" placeholder="placeholder" />
         </form>
         </section>
         <form>
-            {`<Input fullwidth value="text" />`} <br />
+            <div className='type'>
+            {`<Input fullwidth value="text" />`} 
+            </div>
             <label>Label</label><br />
             <Input fullwidth placeholder="text" />
         </form>
         <form>
-            {` <Input multiline row="4"/>`} <br />
+            <div className='type'>
+            {` <Input multiline row="4"/>`} 
+            </div>
             <label>Label</label><br />
                 <Textarea multiline ></Textarea>
         </form>

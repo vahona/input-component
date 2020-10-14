@@ -3,12 +3,21 @@ form {
     margin: 2rem;
 }
 
+.type {
+    font-family: Ubuntu Mono;
+   
+}
+
 input {
     padding: 1rem;
     border-radius: 10px;
 
 }
 
+label {
+    font-family: Noto Sans JP;
+    
+}
 
 .inputsize,
 .interesting,
@@ -110,6 +119,8 @@ p {
 
 
 }
+
+
 
 .multiline {
     border-radius: 10px;
