@@ -11,7 +11,7 @@ function App() {
         <form>
             {`<Input />`} <br />
             <label>Label</label><br />
-            <Input value="placeholder" />
+            <Input value="placeholder"/>
         </form>
         <form>
             {`<Input error />`} <br />
@@ -74,7 +74,7 @@ function App() {
         <form>
             {` <Input multiline row="4"/>`} <br />
             <label>Label</label><br />
-            <Input multiline row="4" value="placeholder" />
+            <Input multiline row="4" value="placeholder"><textarea className="rows" rows="4"></textarea></Input>
         </form>
         </section>
     )

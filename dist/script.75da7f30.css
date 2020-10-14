@@ -11,14 +11,6 @@ input {
     outline: none;
 }
 
-.specific:hover {
-    border: rgb(218, 32, 212) 1px solid;
-}
-
-.specific:focus {
-    border: rgb(248, 235, 53) 1px solid;
-}
-
 .interesting {
     display: flex;
 }
@@ -62,6 +54,20 @@ p {
     border: springgreen 2px solid;
 }
 
+.inpt-helperText:focus {
+  border: black 1px solid;
+}
+
+.specific:hover {
+    border: rgb(12, 145, 168) 2px solid;
+}
+
+.specific:focus {
+    border: rgb(228, 28, 211) 2px solid;
+}
+
+
+
 .inpt-sm {
     padding: 0.75rem  2rem;
 }
@@ -73,27 +79,18 @@ p {
 .inpt-text {
    border: yellowgreen 2px solid;
 }
+.inpt-text:hover,
+.inpt-text:focus {
+  border: black 2px solid;
+}
 
 .inpt-fullwidth {
-    padding-right: 100%;
-    border: black 1px solid;
-}
-
-.inpt-fullwidth:hover,
-.inpt-fullwidth:focus,
-.inpt-multiline:focus,
-.inpt-multiline:hover,
-.inpt-helperText:focus,
-.inpt-startIcon:focus,
-.inpt-startIcon:hover {
+    padding-right: 90%;
     border: black 1px solid;
 }
 
 
-.inpt-multiline {
-    padding-bottom: 4rem;
-    
-}
+
 
 
 

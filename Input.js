@@ -3,7 +3,15 @@ import React from 'react'
 
 function Input(props) {
     const value = props.value || props.children;
-    let classes = props.size ? `inpt-${props.size}` : 'specific'  
+    let classes = props.size ? `inpt-${props.size}`
+     : props.helperText ? `inpt-${props.helperText}`
+     : props.startIcon ? `inpt-${props.startIcon}`
+     : props.endIcon ? `inpt-${props.endIcon}`
+     : props.multiline ? `inpt-${props.multiline}`
+     : props.fullwidth ? `inpt-${props.fullwidth}`
+     : props.disabled ? `inpt-${props.disabled}`
+     : props.error ? `inpt-${props.error}`
+     : 'specific'  
 
     if (props.size) {
         classes = `${classes} inpt-${props.size}`
@@ -36,6 +44,7 @@ function Input(props) {
 
     return(
         <input className={classes} value = {value} disabled = {props.disabled} />
+
     )
 }
 
