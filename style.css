@@ -6,24 +6,17 @@ form {
 input {
     padding: 1rem;
     border-radius: 10px;
-    
+
 }
 
-.specific {
-    outline: none;
-}
 
-.interesting {
-    display: flex;
-}
-
+.inputsize,
+.interesting,
 .icones {
     display: flex;
-}
-.inputsize {
-    display: flex;
-}
+     flex-wrap: wrap;
 
+}
 
 .inpt-disabled {
     background-color: rgba(114, 112, 114, 0.275);
@@ -34,36 +27,43 @@ input {
 .inpt-error {
     border: tomato 2px solid;
     outline: none;
-    
-
+   
 
 }
 
 p {
     color: red;
+
 }
 
 .inpt-error:hover {
     border: black 2px solid;
+
 }
 
 .inpt-error:focus {
     border: springgreen 2px solid;
+
 }
 
 .inpt-helperText:focus {
   border: black 1px solid;
+
 }
+
 
 .specific:hover {
     border: rgb(12, 145, 168) 2px solid;
+
 }
 
 .specific:focus {
     border: rgb(228, 28, 211) 2px solid;
+
 }
 .errorlabel {
     color: red;
+
 }
 
 .inpt-sm {
@@ -74,16 +74,20 @@ p {
 .inpt-md {
     padding: 1rem 3rem;
 
+
 }
 
 .inpt-text {
    border: yellowgreen 2px solid;
+
+
 }
 
 
 .inpt-fullwidth {
     width: 100%;
     border: black 1px solid;
+
 }
 
 
@@ -93,6 +97,8 @@ p {
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: 90%;
+
+
 }
 
 .inpt-startIcon {
@@ -101,11 +107,13 @@ p {
     background-size: 15%;
     background-position: 5%;
     text-align: center;
-}
 
+
+}
 
 .multiline {
     border-radius: 10px;
+
 }
 
 
