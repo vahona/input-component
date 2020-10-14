@@ -43,7 +43,6 @@ function Input(props) {
         classes = `${classes} inpt-startIcon`
     }
 
-
     return(
         <input className={classes} placeholder={placeholder} disabled = {props.disabled} />
 
