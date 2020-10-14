@@ -1,5 +1,6 @@
 import React from 'react'
 import Input from './Input'
+import Textarea from './Textarea'
 import './style.css'
 
 
@@ -11,7 +12,8 @@ function App() {
         <form>
             {`<Input />`} <br />
             <label>Label</label><br />
-            <Input value="placeholder"/>
+            <Input value="placeholder"
+            />
         </form>
         <form>
             {`<Input error />`} <br />
@@ -32,7 +34,7 @@ function App() {
         </form>
         <form>
             {`<Input helperText="Some interesting text" error/>`} <br />
-            <label className="errorspecific">Label</label><br />
+            <label className="errorlabel">Label</label><br />
             <Input helperText="Some interesting text" value="placeholder" error/>
             <p>Some interesting text</p>
         </form>
@@ -74,7 +76,7 @@ function App() {
         <form>
             {` <Input multiline row="4"/>`} <br />
             <label>Label</label><br />
-            <Input multiline row="4" value="placeholder"><textarea className="rows" rows="4"></textarea></Input>
+                <Textarea multiline value="placeholder" ></Textarea>
         </form>
         </section>
     )

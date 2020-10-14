@@ -7,7 +7,6 @@ function Input(props) {
      : props.helperText ? `inpt-${props.helperText}`
      : props.startIcon ? `inpt-${props.startIcon}`
      : props.endIcon ? `inpt-${props.endIcon}`
-     : props.multiline ? `inpt-${props.multiline}`
      : props.fullwidth ? `inpt-${props.fullwidth}`
      : props.disabled ? `inpt-${props.disabled}`
      : props.error ? `inpt-${props.error}`
@@ -38,9 +37,6 @@ function Input(props) {
         classes = `${classes} inpt-${props.value}`
     }
 
-    if(props.multiline) {
-        classes = `${classes} inpt-multiline`
-    }
 
     return(
         <input className={classes} value = {value} disabled = {props.disabled} />

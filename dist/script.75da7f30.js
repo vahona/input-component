@@ -28299,7 +28299,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Input(props) {
   var value = props.value || props.children;
-  var classes = props.size ? "inpt-".concat(props.size) : props.helperText ? "inpt-".concat(props.helperText) : props.startIcon ? "inpt-".concat(props.startIcon) : props.endIcon ? "inpt-".concat(props.endIcon) : props.multiline ? "inpt-".concat(props.multiline) : props.fullwidth ? "inpt-".concat(props.fullwidth) : props.disabled ? "inpt-".concat(props.disabled) : props.error ? "inpt-".concat(props.error) : 'specific';
+  var classes = props.size ? "inpt-".concat(props.size) : props.helperText ? "inpt-".concat(props.helperText) : props.startIcon ? "inpt-".concat(props.startIcon) : props.endIcon ? "inpt-".concat(props.endIcon) : props.fullwidth ? "inpt-".concat(props.fullwidth) : props.disabled ? "inpt-".concat(props.disabled) : props.error ? "inpt-".concat(props.error) : 'specific';
 
   if (props.size) {
     classes = "".concat(classes, " inpt-").concat(props.size);
@@ -28333,10 +28333,6 @@ function Input(props) {
     classes = "".concat(classes, " inpt-").concat(props.value);
   }
 
-  if (props.multiline) {
-    classes = "".concat(classes, " inpt-multiline");
-  }
-
   return /*#__PURE__*/_react.default.createElement("input", {
     className: classes,
     value: value,
@@ -28345,6 +28341,27 @@ function Input(props) {
 }
 
 var _default = Input;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"Textarea.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Textarea() {
+  return /*#__PURE__*/_react.default.createElement("textarea", {
+    rows: "4",
+    className: "multiline"
+  }, "placeholder");
+}
+
+var _default = Textarea;
 exports.default = _default;
 },{"react":"node_modules/react/index.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
@@ -28430,6 +28447,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Input = _interopRequireDefault(require("./Input"));
 
+var _Textarea = _interopRequireDefault(require("./Textarea"));
+
 require("./style.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -28449,7 +28468,7 @@ function App() {
     helperText: "Some interesting text",
     value: "placeholder"
   }), /*#__PURE__*/_react.default.createElement("div", null, "Some interesting text")), /*#__PURE__*/_react.default.createElement("form", null, "<Input helperText=\"Some interesting text\" error/>", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", {
-    className: "errorspecific"
+    className: "errorlabel"
   }, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     helperText: "Some interesting text",
     value: "placeholder",
@@ -28475,19 +28494,15 @@ function App() {
   }))), /*#__PURE__*/_react.default.createElement("form", null, "<Input fullwidth value=\"text\" />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     fullwidth: true,
     value: "text"
-  })), /*#__PURE__*/_react.default.createElement("form", null, " <Input multiline row=\"4\"/>", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
+  })), /*#__PURE__*/_react.default.createElement("form", null, " <Input multiline row=\"4\"/>", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Textarea.default, {
     multiline: true,
-    row: "4",
     value: "placeholder"
-  }, /*#__PURE__*/_react.default.createElement("textarea", {
-    className: "rows",
-    rows: "4"
-  }))));
+  })));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./Input":"Input.js","./style.css":"style.css"}],"script.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./Input":"Input.js","./Textarea":"Textarea.js","./style.css":"style.css"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28529,7 +28544,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50360" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58695" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
