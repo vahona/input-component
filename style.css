@@ -28,7 +28,7 @@ input {
 .inpt-disabled {
     background-color: rgba(114, 112, 114, 0.275);
     cursor: not-allowed;
-    width: 18%;
+
 }
 
 .inpt-error {
@@ -68,12 +68,12 @@ p {
 
 .inpt-sm {
     padding: 0.75rem  2rem;
-    width: 20%;
+
 }
 
 .inpt-md {
     padding: 1rem 3rem;
-    width: 30%;
+
 }
 
 .inpt-text {
@@ -84,6 +84,23 @@ p {
 .inpt-fullwidth {
     width: 100%;
     border: black 1px solid;
+}
+
+
+
+.inpt-endIcon {
+    background-image: url('./icones/lock.svg');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 90%;
+}
+
+.inpt-startIcon {
+    background-image: url('./icones/phone.svg');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 5%;
+    text-align: center;
 }
 
 

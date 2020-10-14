@@ -36,6 +36,13 @@ function Input(props) {
     if (props.value) {
         classes = `${classes} inpt-${props.value}`
     }
+    if (props.endIcon) {
+        classes = `${classes} inpt-endIcon`
+    }
+    if (props.startIcon) {
+        classes = `${classes} inpt-startIcon`
+    }
+
 
     return(
         <input className={classes} placeholder={placeholder} disabled = {props.disabled} />
