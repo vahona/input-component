@@ -1,6 +1,7 @@
 import React from 'react'
 import Input from './Input'
 import Textarea from './Textarea'
+// import Icons from './Icons'
 import './style.css'
 
 
@@ -12,30 +13,31 @@ function App() {
         <form>
             {`<Input />`} <br />
             <label>Label</label><br />
-            <Input value="placeholder"
+                <Input placeholder="placeholde"
             />
+            {/* <Icons /> */}
         </form>
         <form>
             {`<Input error />`} <br />
             <label>Label</label><br />
-            <Input error value="placeholder" />
+            <Input error placeholder="placeholder" />
         </form>
         <form>
             {`<Input disabled />`} <br />
             <label>Label</label><br />
-            <Input value="placeholder" disabled />
+            <Input placeholder="placeholder" disabled />
         </form>
         <section className="interesting">
         <form>
             {` <Input helperText="Some interesting text"/>`} <br />
             <label>Label</label><br />
-            <Input helperText="Some interesting text" value="placeholder"/>
+            <Input helperText="Some interesting text" placeholder="placeholder"/>
             <div>Some interesting text</div>
         </form>
         <form>
             {`<Input helperText="Some interesting text" error/>`} <br />
             <label className="errorlabel">Label</label><br />
-            <Input helperText="Some interesting text" value="placeholder" error/>
+            <Input helperText="Some interesting text" placeholder="placeholder" error/>
             <p>Some interesting text</p>
         </form>
         </section>
@@ -43,40 +45,40 @@ function App() {
         <form>
             {`<Input  startIcon />`} <br />
             <label>Label</label><br />
-            <Input startIcon value="placeholder"/>
+            <Input startIcon placeholder="placeholder"/>
         </form>
         <form>
             {`<Input endIcon />`} <br />
             <label>Label</label><br />
-            <Input endIcon value="placeholder"/>
+            <Input endIcon placeholder="placeholder"/>
         </form>
         </section>
         <form>
             {`<Input value="text" />`} <br />
             <label>Label</label><br />
-            <Input value="text"/>
+            <Input placeholder="text"/>
         </form>
         <section className="inputsize">
         <form>
             {`<Input size="sm" />`} <br />
             <label>Label</label><br />
-            <Input size="sm" value="placeholder" />
+            <Input size="sm" placeholder="placeholder" />
         </form>
         <form>
             {`<Input size="md" />`} <br />
             <label>Label</label><br />
-            <Input size="md" value="placeholder" />
+            <Input size="md" placeholder="placeholder" />
         </form>
         </section>
         <form>
             {`<Input fullwidth value="text" />`} <br />
             <label>Label</label><br />
-            <Input fullwidth value="text" />
+            <Input fullwidth placeholder="text" />
         </form>
         <form>
             {` <Input multiline row="4"/>`} <br />
             <label>Label</label><br />
-                <Textarea multiline value="placeholder" ></Textarea>
+                <Textarea multiline ></Textarea>
         </form>
         </section>
     )

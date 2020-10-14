@@ -28298,7 +28298,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Input(props) {
-  var value = props.value || props.children;
+  var placeholder = props.placeholder || props.children;
   var classes = props.size ? "inpt-".concat(props.size) : props.helperText ? "inpt-".concat(props.helperText) : props.startIcon ? "inpt-".concat(props.startIcon) : props.endIcon ? "inpt-".concat(props.endIcon) : props.fullwidth ? "inpt-".concat(props.fullwidth) : props.disabled ? "inpt-".concat(props.disabled) : props.error ? "inpt-".concat(props.error) : 'specific';
 
   if (props.size) {
@@ -28335,7 +28335,7 @@ function Input(props) {
 
   return /*#__PURE__*/_react.default.createElement("input", {
     className: classes,
-    value: value,
+    placeholder: placeholder,
     disabled: props.disabled
   });
 }
@@ -28357,8 +28357,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Textarea() {
   return /*#__PURE__*/_react.default.createElement("textarea", {
     rows: "4",
-    className: "multiline"
-  }, "placeholder");
+    className: "multiline",
+    value: "placeholder"
+  });
 }
 
 var _default = Textarea;
@@ -28453,50 +28454,50 @@ require("./style.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import Icons from './Icons'
 function App() {
   return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("h1", null, "Input Component"), /*#__PURE__*/_react.default.createElement("form", null, "<Input />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
-    value: "placeholder"
+    placeholder: "placeholde"
   })), /*#__PURE__*/_react.default.createElement("form", null, "<Input error />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     error: true,
-    value: "placeholder"
+    placeholder: "placeholder"
   })), /*#__PURE__*/_react.default.createElement("form", null, "<Input disabled />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
-    value: "placeholder",
+    placeholder: "placeholder",
     disabled: true
   })), /*#__PURE__*/_react.default.createElement("section", {
     className: "interesting"
   }, /*#__PURE__*/_react.default.createElement("form", null, " <Input helperText=\"Some interesting text\"/>", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     helperText: "Some interesting text",
-    value: "placeholder"
+    placeholder: "placeholder"
   }), /*#__PURE__*/_react.default.createElement("div", null, "Some interesting text")), /*#__PURE__*/_react.default.createElement("form", null, "<Input helperText=\"Some interesting text\" error/>", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", {
     className: "errorlabel"
   }, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     helperText: "Some interesting text",
-    value: "placeholder",
+    placeholder: "placeholder",
     error: true
   }), /*#__PURE__*/_react.default.createElement("p", null, "Some interesting text"))), /*#__PURE__*/_react.default.createElement("section", {
     className: "icones"
   }, /*#__PURE__*/_react.default.createElement("form", null, "<Input  startIcon />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     startIcon: true,
-    value: "placeholder"
+    placeholder: "placeholder"
   })), /*#__PURE__*/_react.default.createElement("form", null, "<Input endIcon />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     endIcon: true,
-    value: "placeholder"
+    placeholder: "placeholder"
   }))), /*#__PURE__*/_react.default.createElement("form", null, "<Input value=\"text\" />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
-    value: "text"
+    placeholder: "text"
   })), /*#__PURE__*/_react.default.createElement("section", {
     className: "inputsize"
   }, /*#__PURE__*/_react.default.createElement("form", null, "<Input size=\"sm\" />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     size: "sm",
-    value: "placeholder"
+    placeholder: "placeholder"
   })), /*#__PURE__*/_react.default.createElement("form", null, "<Input size=\"md\" />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     size: "md",
-    value: "placeholder"
+    placeholder: "placeholder"
   }))), /*#__PURE__*/_react.default.createElement("form", null, "<Input fullwidth value=\"text\" />", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     fullwidth: true,
-    value: "text"
+    placeholder: "text"
   })), /*#__PURE__*/_react.default.createElement("form", null, " <Input multiline row=\"4\"/>", " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Label"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Textarea.default, {
-    multiline: true,
-    value: "placeholder"
+    multiline: true
   })));
 }
 

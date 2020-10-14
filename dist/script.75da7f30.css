@@ -68,23 +68,21 @@ p {
 
 .inpt-sm {
     padding: 0.75rem  2rem;
+    width: 20%;
 }
 
 .inpt-md {
     padding: 1rem 3rem;
+    width: 30%;
 }
 
 .inpt-text {
    border: yellowgreen 2px solid;
 }
-.inpt-text:hover,
-.inpt-text:focus {
-  border: black 2px solid;
-}
+
 
 .inpt-fullwidth {
     width: 100%;
-    /* padding-right: 90%; */
     border: black 1px solid;
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 
 function Input(props) {
-    const value = props.value || props.children;
+    const placeholder = props.placeholder || props.children;
     let classes = props.size ? `inpt-${props.size}`
      : props.helperText ? `inpt-${props.helperText}`
      : props.startIcon ? `inpt-${props.startIcon}`
@@ -37,9 +37,8 @@ function Input(props) {
         classes = `${classes} inpt-${props.value}`
     }
 
-
     return(
-        <input className={classes} value = {value} disabled = {props.disabled} />
+        <input className={classes} placeholder={placeholder} disabled = {props.disabled} />
 
     )
 }
