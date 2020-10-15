@@ -5,6 +5,10 @@ form {
     margin: 2rem;
 }
 
+body {
+    background-color: #FAFAD2;
+}
+
 .type {
     font-family: Ubuntu Mono;
    

@@ -75,5 +75,5 @@ $ npm start
 ## Contact
 
 -   Website [your-website.com](https://{your-web-site-link})
--   GitHub [@your-username](https://{github.com/your-usermame})
+-   GitHub [@your-username](https://github.com/vahona/input-component)
 -   Twitter [@your-twitter](https://{twitter.com/your-username})
