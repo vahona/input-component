@@ -45,7 +45,7 @@ function Input(props) {
 
     return(
         <input className={classes} placeholder={placeholder} disabled = {props.disabled} />
-
+    
     )
 }
 

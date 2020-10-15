@@ -8,7 +8,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://naughty-goodall-169fa6.netlify.app">
       Solution
     </a>
   </h3>
